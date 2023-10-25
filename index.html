@@ -1,311 +1,447 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>AluraBooks</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <script src="js/config.js" defer></script>
+  <script src="js/scroll.js" defer></script>
+  <script src="js/menu.js" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="icon" href="img/logo_escola.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@300;700;900&display=swap"
+    rel="stylesheet">
+
+  <meta name="google-site-verification" content="fHeOkCcJxfGwFOftEdyXf-BeJzy-2IM3bd1ZKiBDwvI" />
+
+  <title>Sustentabilidade: Ações que mudam o mundo</title>
 </head>
 
 <body>
-    <header class="cabeçalho">
-        <div class="container">
-            <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu" class="container__rotulo">
-                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
-            </label>
-            <ul class="lista-menu">
-                <li class="lista-menu__titulo">Categorias</li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Programação</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Front-end</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Infraestrutura</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Business</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Design & UX</a>
-                </li>
-            </ul>
-            <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
-            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
-        </div>
 
-        <ul class="opções">
-            <input type="checkbox" id="opções-menu" class="opções__botão">
-            <label for="opções-menu" class="opções__rotulo">
-                <li class="opções__item">Categorias</li>
-            </label>
+  <header class="header scroll_header content">
+    <input type="checkbox" id="menu_input">
 
-            <ul class="lista-menu">
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Programação</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Front-end</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Infraestrutura</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Business</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Design & UX</a>
-                </li>
-            </ul>
+    <div class="logo scroll_header">
+      <img src="img/logo_escola.jpg" alt="colégio estadual bom jesus e.f.m" class="logo_escola">
+      <p class="texto tema vtxt_125 textColor">Colégio Estadual Bom Jesus E.F.M</p>
+    </div>
 
-            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
-            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+    <ul class="header_itens scroll_header tema">
+
+      <li class="itens">
+        <a href="#" onclick="nativo()">
+          <p class="texto tema textColor">Compartilhar</p>
+        </a>
+      </li>
+
+      <li class="itens">
+        <a href="#" onclick="comentar()">
+          <p class="texto tema textColor">Comentar</p>
+        </a>
+      </li>
+
+      <li class="itens">
+        <a href="#" onclick="entrar()">
+          <p class="texto tema textColor">Entrar</p>
+        </a>
+      </li>
+    </ul>
+    <nav class="configuracao">
+      <h4 class="subtitulo">
+        Menu
+      </h4>
+      <ul class="opcoes tema">
+        <li class="itens cabec">
+          <a href="#" onclick="nativo()">
+            <p class="texto">Compartilhar<i class="fas fa-share"></i>
+            </p>
+          </a>
+        </li>
+
+        <li class="itens cabec">
+          <a href="#" onclick="comentar()">
+            <p class="texto">Comentar<i class="far fa-comment"></i></p>
+          </a>
+        </li>
+
+        <li class="itens cabec">
+          <a href="#" onclick="entrar()">
+            <p class="texto">Entrar<i class="fas fa-user"></i>
+            </p>
+          </a>
+        </li>
+        <li class="itens">
+          <label for="progress_font_size" class="texto"> Tamanho da fonte: <span class="fonte_tamanho num">
+              1</span> </label>
+          <input type="range" min="50" max="150" value="100" id="progress_font_size" class="progress">
+        </li>
+        <li class="itens">
+          <label for="progress_img" class="texto"> Tamanho da imagem: <span class="img_tamanho num">
+              1</span> </label>
+          <input type="range" min="50" max="150" value="100" id="progress_img" class="progress">
+        </li>
+        <li class="itens">
+          <label for="progress_geral" class="texto"> Geral: <span class="geral_tamanho num">
+              1</span> </label>
+          <input type="range" min="50" max="150" value="100" id="progress_geral" class="progress">
+        </li>
+        <li class="itens">
+          <label class="texto tema">
+            <input type="button" id="input_tema" class="bnt" value="Mudar tema" alt="botão de mudar tema"
+              onclick="mudarRoot()">
+          </label>
+        </li>
+        <li class="itens color">
+          <p class="texto">Cores de fundo:</p>
+          <label for="input_cor_1" class="texto">Principal:</label>
+          <input type="color" id="input_cor_1" class="input_cor">
+
+          <label for="input_cor_1" class="texto">Segundaria:</label>
+          <input type="color" id="input_cor_2" class="input_cor">
+        </li>
+        <li class="itens color">
+          <p class="texto">Cores de texto:</p>
+          <label for="input_cor_1" class="texto">Titulo:</label>
+          <input type="color" id="input_cor_3" class="input_cor">
+
+          <label for="input_cor_1" class="texto">Texto:</label>
+          <input type="color" id="input_cor_4" class="input_cor">
+        </li>
+        <li class="itens color">
+          <p class="texto">Cores de menu:</p>
+          <label for="input_cor_1" class="texto">Fundo:</label>
+          <input type="color" id="input_cor_5" class="input_cor">
+
+          <label for="input_cor_1" class="texto">Texto:</label>
+          <input type="color" id="input_cor_6" class="input_cor">
+        </li>
+        <li class="itens">
+          <label class="texto">
+            <input type="button" id="input_reset" class="bnt" value="Resetar" alt="botão de resetar"
+              onclick="resetConf()">
+          </label>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="botao scroll_header">
+      <div class="barras"></div>
+      <div class="barras"></div>
+      <div class="barras"></div>
+      <label class="clic_js" for="menu_input"></label>
+    </div>
+  </header>
+
+  <section class="formularios">
+    <section class="compartilhar">
+      <form class="form">
+        <h3 class="subtitulo">Compartilhar</h3>
+        <input type="button" value="Sair" class="bnt texto sair" onclick="fechar()">
+
+        <ul class="lista">
+          <li class="itens"><a
+              href="https://api.whatsapp.com/send?text=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo%20-%20https%3A%2F%2Fagrinho2023-iota.vercel.app"
+              target="_blank" class="texto"><i class="fab fa-whatsapp icone"></i>Whatsapp</a></li>
+          <li class="itens"><a
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fagrinho2023-iota.vercel.app&quote=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
+              class="texto" target="_blank"><i class="fab fa-facebook icone"></i>Facebook</a></li>
+          <li class="itens"><a
+              href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fagrinho2023-iota.vercel.app&title=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo&summary=Confira%20nosso%20site%20sobre%20sustentabilidade%20e%20as%20a%C3%A7%C3%B5es%20que%20podem%20mudar%20o%20mundo."
+              class="texto" target="_blank"><i class="fab fa-linkedin icone"></i>Linkedin</a></li>
+          <li class="itens"><a
+              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fagrinho2023-iota.vercel.app&text=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
+              class="texto" target="_blank"><i class="fab fa-twitter icone"></i>Twitter</a></li>
+          <li class="itens"><a
+              href="https://t.me/share/url?url=https%3A%2F%2Fagrinho2023-iota.vercel.app&text=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
+              target="_blank" class="texto"><i class="fab fa-telegram icone"></i>Telegram</a></li>
+          <li class="itens"><a
+              href="https://www.reddit.com/submit?url=https%3A%2F%2Fagrinho2023-iota.vercel.app&title=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
+              target="_blank" class="texto"><i class="fab fa-reddit icone"></i>Reddit</a></li>
+          <li class="itens"><a
+              href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fagrinho2023-iota.vercel.app&media=https%3A%2F%2Fagrinho2023-iota.vercel.app%2Fimagens%2Fimagem-compartilhamento.jpg&description=Sustentabilidade%3A%20A%C3%A7%C3%B5es%20que%20Mudam%20o%20Mundo"
+              target="_blank" class="texto"><i class="fab fa-pinterest icone"></i>Pinterest</a>
+          </li>
+          <li class="itens texto"><span>link:</span> https://agrinho2023-iota.vercel.app</li>
         </ul>
 
-        <div class="container">
-            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
-                    class="container__imagem container__imagem-transparente"></a>
-            <a href="#" class="container__link">
-                <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
-                <p class="container__texto">Minha sacola</p>
-            </a>
-            <a href="#" class="container__link">
-                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
-                <p class="container__texto">Meu perfil</p>
-            </a>
+      </form>
+    </section>
+    <section class="comentar">
+      <form class="form" id="form_c">
+        <h3 class="subtitulo">Comentar</h3>
+        <input type="button" value="Sair" class="bnt texto sair" onclick="fechar()">
+
+        <label for="input_nome" class="texto">Nome e sobrenome:</label>
+        <input type="text" id="input_nome" class="input texto" required>
+
+        <label for="input_email" class="texto">Email:</label>
+        <input type="email" id="input_email" class="input texto" placeholder="email@dominio.com" required>
+
+        <label for="input_telefone" class="texto">Telefone:</label>
+        <input type="tel" id="input_telefone" class="input texto" placeholder="(XX) XXXXX-XXXX" required>
+
+        <label for="input_mensagem" class="texto">Mensagem:</label>
+        <textarea cols="50" rows="10" id="input_mensagem" class="input texto mensagem" required></textarea>
+
+        <input type="submit" value="Enviar" class="bnt texto" onclick="fecharCompleto(false)">
+      </form>
+    </section>
+    <section class="entrar">
+      <form class="form" id="form_e">
+        <h3 class="subtitulo">Entrar</h3>
+        <input type="button" value="Sair" class="bnt texto sair" onclick="fechar()">
+
+        <label for="input_foto" id="label_foto">
+          <p class="texto textolabel">Foto:</p>
+        </label>
+        <input type="file" id="input_foto" accept=".png, .jpg, .jpeg" class="input_foto">
+
+        <label for="input_nome" class="texto">Nome:</label>
+        <input type="text" id="input_nome" class="input texto" required>
+
+        <label for="input_data" class="texto">Data de nascimento:</label>
+        <input type="date" id="input_data" class="input texto" required>
+
+        <label for="input_email" class="texto">Email:</label>
+        <input type="email" id="input_email" class="input texto" placeholder="email@dominio.com" required>
+
+        <label for="input_senha" class="texto">Senha:</label>
+        <input type="password" id="input_email" class="input texto" required>
+
+        <input type="submit" value="Entrar" class="bnt texto" onclick="fecharCompleto(true)">
+      </form>
+    </section>
+  </section>
+
+  <section class="menu_audio">
+    <input type="checkbox" id="audio_input">
+
+    <label class="clic_audio" for="audio_input">
+      <i class="fas fa-volume-up"></i>
+    </label>
+    <audio controls>
+      <source src="audio/pagina_audio.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudios.
+    </audio>
+  </section>
+
+  <section class="template content tema">
+    <div class="conteudo">
+      <h1 class="titulo tema vtxt_120 titleColor">
+        Sustentabilidade: Ações que mudam o mundo
+      </h1>
+      <p class="texto tema textColor">Mais do que uma palavra da moda, a sustentabilidade é um objetivo a ser alcançado.
+        Juntos,
+        podemos tornar o mundo
+        um lugar melhor.</p>
+    </div>
+  </section>
+
+  <section class="topicos tema">
+    <h3 class="titulo" id="topic_t"> Tópicos </h3>
+    <ul class="topicos_lista">
+      <li class="itens">
+        <a href="#impor_susten">
+          <p class="texto">Importância da sustentabilidade</p>
+        </a>
+      </li>
+      <li class="itens">
+        <a href="#acoes_susten">
+          <p class="texto">Ações sustentáveis</p>
+        </a>
+      </li>
+      <li class="itens">
+        <a href="#ex_acoes">
+          <p class="texto">Exemplos de ações sustentáveis</p>
+        </a>
+      </li>
+      <li class="itens">
+        <a href="#aplicar_acoes">
+          <p class="texto">Como aplicar essas ações no dia a dia?</p>
+        </a>
+      </li>
+      <li class="itens">
+        <a href="#benefcios">
+          <p class="texto">Benefícios da sustentabilidade</p>
+        </a>
+      </li>
+      <li class="itens">
+        <a href="#impactos">
+          <p class="texto">Impactos positivos ao meio ambiente</p>
+        </a>
+      </li>
+      <li class="itens">
+        <a href="#mudar">
+          <p class="texto">Mudando o mundo através da sustentabilidade</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section class="importancia content scrollTexto" id="impor_susten">
+    <div class="conteudo">
+      <h3 class="titulo tema">
+        Por que a sustentabilidade é importante?
+      </h3>
+      <p class="texto tema">
+        A sustentabilidade está ligada à nossa sobrevivência no planeta. Quando somos sustentáveis, estamos reduzindo
+        nosso impacto ambiental e economizando recursos para as próximas gerações. É um dever de todos nós garantir um
+        futuro habitável para o planeta Terra.
+      </p>
+    </div>
+  </section>
+
+  <section class="acoes_susten scrollTexto" id="acoes_susten">
+    <div class="conteudo ">
+      <h3 class="titulo tema ">
+        O que são ações sustentáveis?
+      </h3>
+      <p class="texto tema ">
+        Ações sustentáveis são iniciativas que visam equilibrar as demandas socioeconômicas com a preservação do meio
+        ambiente. São atividades que reduzem a poluição, o uso inadequado de recursos, a produção excessiva de lixo,
+        entre outros problemas ambientais.
+      </p>
+    </div>
+  </section>
+
+  <section class="ex_acoes scrollTexto vtxt_125" id="ex_acoes">
+    <div class="conteudo">
+      <h3 class="titulo tema">
+        Exemplos de ações sustentáveis
+      </h3>
+      <ul class="lista">
+        <li class="itens">
+          <h4 class="subtitulo tema">Energias Renováveis</h4>
+          <p class="texto tema">O uso de fontes renováveis de energia, como a solar, eólica, hidrelétrica ou geotérmica,
+            é
+            uma
+            ação sustentável que ajuda a reduzir a poluição e o consumo de combustíveis fósseis.</p>
+        </li>
+        <li class="itens">
+          <h4 class="subtitulo tema">Transporte Sustentável</h4>
+          <p class="texto tema">Pedalar, caminhar ou compartilhar carros são opções que reduzem a emissão de gases
+            poluentes
+            e
+            incentivam o uso de transportes sustentáveis.</p>
+        </li>
+        <li class="itens">
+          <h4 class="subtitulo tema">Consumo Responsável</h4>
+          <p class="texto tema">O consumo consciente significa reduzir o desperdício, optar por produtos orgânicos,
+            locais ou
+            sustentáveis e reutilizar ou reciclar materiais. Assim, reduzimos nosso impacto ambiental e incentivamos uma
+            produção mais sustentável.</p>
+        </li>
+        <li class="itens">
+          <h4 class="subtitulo tema">Preservação de Áreas Naturais</h4>
+          <p class="texto tema">Proteger as áreas naturais, como florestas, praias e rios, é uma ação sustentável que
+            ajuda a
+            manter a biodiversidade do planeta e garante a sobrevivência de espécies animais e vegetais.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="aplicar_acoes scrollTexto" id="aplicar_acoes">
+    <div class="conteudo">
+      <h3 class="titulo tema">
+        Como aplicar essas ações no dia a dia?
+      </h3>
+      <p class="texto tema">
+        Pequenas ações podem gerar grandes mudanças. Comece separando o lixo, usando sacolas reutilizáveis, economizando
+        água e energia, optando por produtos orgânicos e locais, compartilhando carros ou adotando um transporte
+        alternativo, como caminhar ou andar de bicicleta.
+      </p>
+    </div>
+  </section>
+
+  <section class="benefcios scrollTexto vimg_130" id="benefcios">
+    <div class="conteudo">
+      <h1 class="titulo tema">
+        Benefícios da Sustentabilidade
+      </h1>
+      <p class="texto tema">A sustentabilidade traz benefícios para todos: melhora a qualidade de vida, cria empregos
+        verdes,
+        incentiva a inovação e o desenvolvimento sustentável, reduz os custos de produção, preserva o meio ambiente e
+        garante um futuro melhor.</p>
+    </div>
+    <img src="img/beneficios_2.jpeg" alt="Benefícios da sustentabilidade, um futuro melhor com sustentabilidade">
+  </section>
+
+  <section class="impactos scrollTexto vtxt_125" id="impactos">
+    <ul class="lista conteudo">
+      <li class="titulo tema">
+        <h3>
+          Impactos positivos ao meio ambiente
+        </h3>
+      </li>
+      <li class="itens">
+        <img src="img/biodiversidade.jpeg" alt="Impactos na biodiversidade">
+        <h4 class="subtitulo tema">Biodiversidade</h4>
+        <p class="texto tema">A sustentabilidade ajuda a manter a biodiversidade das espécies animais e vegetais do
+          planeta,
+          mantendo o equilíbrio ecológico e evitando a extinção de espécies.</p>
+      </li>
+      <li class="itens">
+        <img src="img/turismo.jpeg" alt="Turismo sustentável">
+        <h4 class="subtitulo tema">Lazer e Turismo Sustentável</h4>
+        <p class="texto tema">A sustentabilidade permite a exploração de áreas naturais sem prejudicar o meio ambiente,
+          criando opções de lazer e turismo sustentável.</p>
+      </li>
+      <li class="itens ">
+        <img src="img/agricultura.jpg" alt="impactos na agricultura">
+        <h4 class="subtitulo tema">Agricultura sustentável</h4>
+        <p class="texto tema">Com sustentabilidade, a agricultura pode ser mais eficiente, reduzindo desperdícios,
+          economizando recursos e criando produtos mais saudáveis.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="mudar content scrollTexto" id="mudar">
+    <div class="conteudo">
+      <h1 class="titulo tema">
+        Mudando o mundo através da sustentabilidade
+      </h1>
+      <p class="texto tema">A sustentabilidade depende de nós. Ao colocar em prática as ações sustentáveis em nossas
+        vidas
+        diárias, podemos inspirar outras pessoas a seguir o nosso exemplo. Juntos, podemos mudar o mundo e garantir um
+        futuro sustentável para todos.</p>
+    </div>
+  </section>
+
+  <footer class="footer vtxt_110">
+    <ul class="lista">
+      <li class="itens texto"><img src="img/logo_escola.png" alt="logo da escola" class="logo_escola"> Colégio Estadual
+        Bom Jesus E.F.M</li>
+      <li class="itens texto"><span class="titulo">Endereço:</span> <a href="https://goo.gl/maps/vecZkPFKK8psWQD76"
+          class="texto">Av. Ipiranga, 133 - Centro, Bom Jesus do Sul - PR, 85708-000</a>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14320.658600164077!2d-53.6020241!3d-26.1913217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f09063fd6b7abd%3A0xeec2efbc2e39fe07!2sCol%C3%A9gio%20Estadual%20Bom%20Jesus!5e0!3m2!1spt-BR!2sbr!4v1690927125144!5m2!1spt-BR!2sbr"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </header>
-    <section class="banner">
-        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
-        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
-    </section>
-    <section class="carrossel">
-        <h2 class="carrossel__titulo">Novos lançamentos</h2>
-        <div class="carrossel__container">
-            <div class="swiper">
-                <div class="swiper-pagination"></div>
+      </li>
+      <li class="itens texto"><span class="titulo">Telefone:</span> <span class="info"> &nbsp;(46) 3548-1121</span>
+      </li>
+      <li class="itens texto"><span class="titulo">Fecebook:</span> <span class="info"> <a
+            href="https://www.facebook.com/cebomjesusefm" class="texto">Colegio Estadual B.J.S</a></span>
+      </li>
+      <li class="itens texto"><span class="titulo">Professor:</span> <span class="info"> &nbsp;Eli Berto Dambros</span>
+      </li>
+      <li class="itens texto"><span class="titulo">Aluno:</span> <span class="info"> &nbsp;João Vitor da Silva
+          Antunes</span></li>
+      <li class="itens texto"> &copy; Sustentabilidade: Ações que mudam o mundo - 2023</li>
+    </ul>
+  </footer>
 
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/Arquitetura.png" alt="Livro sobre Arquitetura"></div>
-                    <div class="swiper-slide"><img src="img/UX.png" alt="Livro sobre sla oq"></div>
-                    <div class="swiper-slide"><img src="img/Tuning.png" alt="Livro sobre Tuning (seja lá oq for isso)">
-                    </div>
-                    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
-                    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
-                    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
-                </div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-
-            <div class="card">
-                <div class="card__descrição">
-                    <div class="descrição">
-                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
-                        <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
-                        <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
-                    </div>
-                    <img src="img/Angular.svg" class="descrição__imagem">
-                </div>
-
-                <div class="card__botões">
-                    <ul class="botões">
-                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
-                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
-                    </ul>
-                    <a href="#" class="botões__ancora">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="carrossel">
-        <h2 class="carrossel__titulo">Mais vendidos</h2>
-        <div class="carrossel__container">
-            <div class="swiper">
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/Javascript.svg"
-                            alt="Livro sobre javascript assertivo da alurabooks"></div>
-                    <div class="swiper-slide"><img src="img/Liderança.svg"
-                            alt="Livro sobre liderança em design da alura books"></div>
-                    <div class="swiper-slide"><img src="img/ApacheKafka.svg"
-                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
-                    <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia front end"></div>
-                    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre portugol"></div>
-                    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
-                </div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-
-            <div class="card">
-                <div class="card__descrição">
-                    <div class="descrição">
-                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
-                        <h3 class="descrição__titulo">Autora do Mês</h3>
-                        <h2 class="descrição__titulo-livro">Juliana Agarikov</h2>
-                        <p class="descrição__texto">Analista de sistemas e escritora, Juliana é especialista em
-                            Front-End.
-                        </p>
-                    </div>
-                    <img src="img/Escritora.svg" class="descrição__imagem">
-                </div>
-
-                <div class="card__botões">
-                    <ul class="botões">
-                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
-                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
-                    </ul>
-                    <a href="#" class="botões__ancora">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="tópicos">
-        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
-        <ul class="tópicos__lista">
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Android</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Marketing Digital</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Agile</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Startups</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">HTML e CSS</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Python</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">OO</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Java</a>
-            </li>
-        </ul>
-    </section>
-
-    <section class="contato">
-        <div class="contato__descrição">
-            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
-        </div>
-        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
-    </section>
-
-    <hr />
-
-    <footer class="rodapé">
-        <h2 class="rodapé__titulo">Grupo Alura</h2>
-        <ul class="lista-rodapé">
-            <li class="lista-rodapé__titulo">Educação</li>
-            <li class="lista-rodapé__item">
-                <img src="img/CasaDoCodigo.svg" alt="Logo da casa do código">
-                <a href="#" class="lista-rodapé__link">Casa do código</a>
-            </li>
-            <li class="lista-rodapé__item">
-                <img src="img/Caelum.svg" alt="Logo da caelum">
-                <a href="#" class="lista-rodapé__link">Caelum</a>
-            </li>
-        </ul>
-
-        <ul class="lista-rodapé">
-            <li class="lista-rodapé__titulo">Educação online</li>
-            <li class="lista-rodapé__item">
-                <img src="img/Alura.svg" alt="Logo da Alura">
-                <a href="#" class="lista-rodapé__link">Alura</a>
-            </li>
-            <li class="lista-rodapé__item">
-                <img src="img/AluraEmpresas.svg" alt="Logo da Alura para Empresas">
-                <a href="#" class="lista-rodapé__link">Alura para Empresas</a>
-            </li>
-            <li class="lista-rodapé__item">
-                <img src="img/AluraLATAM.svg" alt="Logo da Alura Latam">
-                <a href="#" class="lista-rodapé__link">Alura LATAM</a>
-            </li>
-            <li class="lista-rodapé__item">
-                <img src="img/AluraStart.svg" alt="Logo da Alura START">
-                <a href="#" class="lista-rodapé__link">Alura Start</a>
-            </li>
-            <li class="lista-rodapé__item">
-                <img src="img/MusicDot.svg" alt="Logo da Music Dot">
-                <a href="#" class="lista-rodapé__link">Music Dot</a>
-            </li>
-            <li class="lista-rodapé__item">
-                <img src="img/AluraLingua.svg" alt="Logo da Alura Lingua">
-                <a href="#" class="lista-rodapé__link">Alura Lingua</a>
-            </li>
-            <li class="lista-rodapé__item">
-                <img src="img/PM3.svg" alt="Logo da PM3">
-                <a href="#" class="lista-rodapé__link">PM3</a>
-            </li>
-        </ul>
-
-        <ul class="lista-rodapé">
-            <li class="lista-rodapé__titulo">Comunidade</li>
-            <li class="lista-rodapé__item">
-                <img src="img/HipstersTech.svg" alt="Logo do Hipsters ponto Tech">
-                <a href="#" class="lista-rodapé__link">Hipsters ponto Tech</a>
-            </li>
-            <li class="lista-rodapé__item">
-                <img src="img/ScubaDev.svg" alt="Logo do Scuba Dev">
-                <a href="#" class="lista-rodapé__link">Scuba Dev</a>
-            </li>
-            <li class="lista-rodapé__item">
-                <img src="img/LayersTech.svg" alt="Logo do Layers ponto Tech">
-                <a href="#" class="lista-rodapé__link">Layers ponto Tech</a>
-            </li>
-            <li class="lista-rodapé__item">
-                <img src="img/LikeABoss.svg" alt="Logo do Like a Boss">
-                <a href="#" class="lista-rodapé__link">Like a Boss</a>
-            </li>
-            <li class="lista-rodapé__item">
-                <img src="img/CarreiraSemFronteira.svg" alt="Logo do Carreira sem fronteiras">
-                <a href="#" class="lista-rodapé__link">Carreira sem fronteiras</a>
-            </li>
-            <li class="lista-rodapé__item">
-                <img src="img/HipstersJobs.svg" alt="Logo do Hipsters ponto jobs">
-                <a href="#" class="lista-rodapé__link">Hipsters ponto jobs</a>
-            </li>
-            <li class="lista-rodapé__item">
-                <img src="img/GUJ.svg" alt="Logo do GUJ">
-                <a href="#" class="lista-rodapé__link">GUJ</a>
-            </li>
-        </ul>
-    </footer>
-
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            spaceBetween: 10,
-            slidesPerView: 3,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-            },
-        });
-    </script>
 </body>
 
 </html>
