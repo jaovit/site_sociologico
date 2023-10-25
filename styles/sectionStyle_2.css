@@ -1,0 +1,70 @@
+/* importancia da sustentabilidade */
+
+.importancia,
+.mudar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 0;
+    border-bottom: var(--borda);
+    border-top: var(--borda);
+}
+
+.importancia {
+    border-bottom: var(--borda);
+}
+
+.importancia::before,
+.mudar::before {
+    top: 0;
+    left: 0;
+    background-image: var(--background-card);
+    filter: var(--filtro);
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+.importancia .conteudo,
+.mudar .conteudo {
+    width: 62.5vw;
+}
+
+.importancia .texto,
+.mudar .texto {
+    margin-left: 1vw;
+}
+
+/* tablet */
+@media (max-width: 850px) {
+
+    .importancia,
+    .mudar {
+        padding: 2.5vw 0;
+    }
+
+    .importancia .conteudo,
+    .mudar .conteudo {
+        width: 75vw;
+    }
+}
+
+/* celular  */
+@media (max-width: 500px) {
+
+    .importancia,
+    .mudar {
+        padding: 5vw 0;
+    }
+
+    .importancia .conteudo,
+    .mudar .conteudo {
+        width: 90vw;
+    }
+
+    .importancia .texto,
+    .mudar .texto {
+        margin-left: 2vw;
+    }
+}

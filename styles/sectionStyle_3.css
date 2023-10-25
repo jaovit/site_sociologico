@@ -1,0 +1,148 @@
+/* ações sustentaveis */
+
+.acoes_susten,
+.aplicar_acoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25vw;
+}
+
+.acoes_susten .conteudo,
+.aplicar_acoes .conteudo {
+    flex-basis: 60vw;
+    border-radius: 1vw;
+    background-color: var(--cor-segundaria);
+    padding: 1.75vw 2vw;
+}
+
+/* como aplicar as ações */
+
+.aplicar_acoes .conteudo {
+    width: 65vw;
+}
+
+/* impactos */
+
+.impactos {
+    position: relative;
+    padding: 2.25vw 10vw;
+
+}
+
+.impactos .lista {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 1vw;
+    padding: 1.75vw 3vw;
+    background-color: var(--cor-segundaria);
+    border-radius: 1vw;
+    text-align: center;
+}
+
+.impactos .titulo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.impactos .itens {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    grid-row: 2;
+}
+
+.impactos img {
+    margin-bottom: 1vw;
+    width: calc(var(--tamanho-img) * 17vw);
+    height: calc(var(--tamanho-img) * 17vw);
+    object-fit: cover;
+    border-radius: .75vw;
+}
+
+/* tablet */
+@media (max-width: 850px) {
+
+    .acoes_susten,
+    .aplicar_acoes {
+        padding: 1.75vw 0;
+    }
+
+    .acoes_susten .conteudo,
+    .aplicar_acoes .conteudo {
+        flex-basis: 77.5vw;
+        padding: 2.5vw;
+    }
+
+    .acoes_susten .texto,
+    .aplicar_acoes .texto {
+        margin-left: 1vw;
+    }
+
+
+    .impactos {
+        padding: 2vw;
+    }
+
+    .impactos .lista {
+        padding: 3vw;
+        justify-content: center;
+    }
+
+    .impactos.txt_125 .itens:nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 3;
+        width: 85%;
+    }
+
+    .impactos img {
+        margin: 1vw 0 1.5vw 0;
+        width: calc(var(--tamanho-img) * 20vw);
+        height: calc(var(--tamanho-img) * 20vw);
+    }
+}
+
+/* celular  */
+@media (max-width: 500px) {
+
+    .acoes_susten,
+    .aplicar_acoes {
+        padding: 4vw 0;
+    }
+
+    .acoes_susten .conteudo,
+    .aplicar_acoes .conteudo {
+        flex-basis: 90vw;
+    }
+
+    .acoes_susten .texto,
+    .aplicar_acoes .texto {
+        margin-left: 1.75vw;
+    }
+
+    .impactos {
+        padding: 4vw;
+    }
+
+    .impactos .lista {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .impactos .itens {
+        width: 90%;
+    }
+
+    .impactos img {
+        margin: 5vw 0 1.5vw 0;
+        width: calc(var(--tamanho-img) * 40vw);
+        height: calc(var(--tamanho-img) * 25vw);
+    }
+}

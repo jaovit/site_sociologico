@@ -1,0 +1,115 @@
+/* exemplos de ações sustentaveis */
+
+.ex_acoes {
+    position: relative;
+    padding: 2vw 12vw;
+    text-align: center;
+    background-color: var(--cor-segundaria);
+}
+
+.ex_acoes .lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 3vw;
+}
+
+/* benefcios */
+
+.benefcios {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 3vw;
+    background-color: var(--cor-segundaria);
+}
+
+.benefcios .conteudo {
+    width: 35vw;
+}
+
+.benefcios img {
+    margin-left: 5vw;
+    width: calc(var(--tamanho-img) * 22.5vw);
+    height: calc(var(--tamanho-img) * 22.5vw);
+    object-fit: cover;
+    border-radius: .75vw;
+}
+
+/* tablet */
+@media (max-width: 850px) {
+    .benefcios {
+        padding: 3vw;
+    }
+
+    .benefcios.img_130 {
+        flex-direction: column;
+    }
+
+    .benefcios.img_130 .conteudo {
+        width: 85vw;
+    }
+
+    .benefcios .conteudo {
+        width: 57.5vw;
+    }
+
+    .benefcios .texto {
+        margin-left: 1.75vw;
+    }
+
+    .benefcios img {
+        margin-left: 2vw;
+        margin-top: 3.5vw;
+        width: calc(var(--tamanho-img) * 20vw);
+        height: calc(var(--tamanho-img) * 20vw);
+    }
+
+    .benefcios.img_130 img {
+        width: calc(var(--tamanho-img) * 25vw);
+    }
+
+    .ex_acoes {
+        padding: 2.5vw 3vw;
+    }
+
+    .ex_acoes .lista {
+        grid-row-gap: 5vw;
+        margin-top: 3vw;
+    }
+
+}
+
+/* celular  */
+@media (max-width: 500px) {
+
+    .benefcios .conteudo {
+        width: 60vw;
+    }
+
+    .benefcios .texto {
+        margin-left: 2vw;
+    }
+
+    .benefcios img {
+        width: calc(var(--tamanho-img) * 30vw);
+        height: calc(var(--tamanho-img) * 30vw);
+    }
+
+    .benefcios.img_130 img {
+        width: calc(var(--tamanho-img) * 45vw);
+    }
+
+    .ex_acoes {
+        padding: 2.5vw 5vw;
+    }
+
+    .ex_acoes.txt_125 .itens {
+        margin-top: 5vw;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: auto;
+    }
+}
