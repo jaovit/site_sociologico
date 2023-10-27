@@ -29,11 +29,10 @@
   --filtro: brightness(25%) opacity(.8);
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     --cor-principal-deg: none;
 
-    /* modo claro */
     --cor-principal: #c7c7c7;
     --cor-segundaria: #b6b6b6;
     --cor-titulo: #202020;
@@ -43,7 +42,7 @@
     --background-card: url(../img/fundo_elem.jpg);
     --filtro: brightness(75%) opacity(.5);
   }
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -161,6 +160,31 @@ table {
 }
 
 /* tablet */
+
+@media (max-width: 2000px) {
+
+  html {
+    scroll-padding-top: 15vw;
+  }
+
+  .titulo {
+    font-size: calc(var(--font-size-js) * 1.35vw);
+    margin-bottom: calc(var(--font-size-js) * .675vw);
+
+  }
+
+  .subtitulo {
+    font-size: calc(var(--font-size-js) * 1.115vw);
+    margin-bottom: calc(var(--font-size-js) * .375vw);
+  }
+
+  .texto {
+    font-size: calc(var(--font-size-js) * .81vw);
+    line-height: calc(var(--font-size-js) * 1.3125vw);
+  }
+
+}
+
 @media (max-width: 850px) {
   html {
     scroll-padding-top: 8vw;
@@ -220,3 +244,4 @@ table {
   }
 
 }
+
