@@ -19,20 +19,20 @@ var txtColor = document.querySelectorAll(".textColor")
 var input_cor_5 = document.querySelector("#input_cor_5")
 var input_cor_6 = document.querySelector("#input_cor_6")
 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    modo = true;
-    // true = escuro;
-    for (var i = 0; i < elementosMudar.length; i++) {
-        elementosMudar[i].classList.remove('claro');
-    }
+// if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//     modo = true;
+//     // true = escuro;
+//     for (var i = 0; i < elementosMudar.length; i++) {
+//         elementosMudar[i].classList.remove('claro');
+//     }
 
-} else {
-    modo = false
-    // false = claro;
-    for (var i = 0; i < elementosMudar.length; i++) {
-        elementosMudar[i].classList.add('claro');
-    }
-}
+// } else {
+//     modo = false
+//     // false = claro;
+//     for (var i = 0; i < elementosMudar.length; i++) {
+//         elementosMudar[i].classList.add('claro');
+//     }
+// }
 
 function mudarRoot() {
     resetcolor()
@@ -283,19 +283,22 @@ function resetConf() {
 
     geral()
 
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        modo = false;
-        // true = escuro;
-        for (var i = 0; i < elementosMudar.length; i++) {
-            elementosMudar[i].classList.remove('claro');
-        }
+    // if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    //     modo = false;
+    //     // true = escuro;
+    //     for (var i = 0; i < elementosMudar.length; i++) {
+    //         elementosMudar[i].classList.remove('claro');
+    //     }
 
-    } else {
-        modo = true
-        // false = claro;
-        for (var i = 0; i < elementosMudar.length; i++) {
-            elementosMudar[i].classList.add('claro');
-        }
+    // } else {
+    //     modo = true
+    //     // false = claro;
+    //     for (var i = 0; i < elementosMudar.length; i++) {
+    //         elementosMudar[i].classList.add('claro');
+    //     }
+    // }
+    for (var i = 0; i < elementosMudar.length; i++) {
+        elementosMudar[i].classList.remove('claro');
     }
 
     mudarRoot()
