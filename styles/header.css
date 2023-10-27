@@ -293,6 +293,9 @@
     transform: translateX(-50%) scale(1.05);
 }
 
+@media (max-width: 2000px) {
+}
+
 /* tablet */
 @media (max-width: 850px) {
     .header {

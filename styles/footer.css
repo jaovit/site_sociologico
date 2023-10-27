@@ -65,6 +65,9 @@
     grid-column-end: 4;
 }
 
+@media (max-width: 2000px) {
+  }
+
 @media (max-width: 850px) {
     .footer {
         padding: 3vw;

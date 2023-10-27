@@ -10,7 +10,7 @@
 .template::before {
     top: 0;
     left: 0;
-    background-image: url(../img/fundo.jpg);
+    background-image: url(../img/racismo-no-brasil-scaled.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -214,6 +214,9 @@
 
 .menu_audio audio::-webkit-media-controls-play-button {
     transform: scale(2);
+}
+
+@media (max-width: 2000px) {
 }
 
 /* tablet */
