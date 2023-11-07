@@ -19,52 +19,8 @@ var txtColor = document.querySelectorAll(".textColor")
 var input_cor_5 = document.querySelector("#input_cor_5")
 var input_cor_6 = document.querySelector("#input_cor_6")
 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    modo = true;
-    // true = escuro;
-    for (var i = 0; i < elementosMudar.length; i++) {
-        elementosMudar[i].classList.remove('claro');
-    }
-
-} else {
-    modo = false
-    // false = claro;
-    for (var i = 0; i < elementosMudar.length; i++) {
-        elementosMudar[i].classList.add('claro');
-    }
-}
-
 function mudarRoot() {
     resetcolor()
-    if (modo) {
-        var mudancas = {
-            // claro
-            // '--cor-header': '#c7c7c7',
-            '--borda-menu': 'solid .1vw #ebc4b0',
-            '--cor-principal-deg': 'none',
-            '--menu-cor': '#191919',
-            '--cor-text-menu': '#c9c2c0',
-            '--cor-menu-2': '#e4b7a0',
-
-            '--cor-principal': '#c7c7c7',
-            '--cor-segundaria': '#b6b6b6',
-            '--cor-titulo': '#202020',
-            '--sub-titulo': '#242424',
-            '--cor-texto': '#2e2e2e',
-            '--borda': 'solid .01vw rgb(70, 70, 70)',
-            '--background-card': 'url(../img/fundo_elem.jpg)',
-            '--filtro': 'brightness(75%) opacity(.5)',
-            // '--font-size-js': '1.5'
-
-        }
-
-        for (var i = 0; i < elementosMudar.length; i++) {
-            elementosMudar[i].classList.add('claro');
-        }
-
-        modo = false
-    } else {
-        // escuro
         var mudancas = {
 
             // '--cor-header': 'rgba(25, 25, 25, 0.75)',
@@ -80,7 +36,7 @@ function mudarRoot() {
             '--sub-titulo': '#EBCCBB',
             '--cor-texto': '#c9c2c0',
             '--borda': 'solid .01vw rgb(172, 170, 170)',
-            '--background-card': 'url(../img/fundo.jpg)',
+            '--background-card': 'url(../img/racismo-no-brasil-scaled.jpg)',
             '--filtro': 'brightness(25%)'
         }
 
@@ -89,7 +45,7 @@ function mudarRoot() {
         }
 
         modo = true
-    }
+    
 
     for (var prop in mudancas) {
         root.style.setProperty(prop, mudancas[prop]);
@@ -183,12 +139,6 @@ function geral() {
         img_130.classList.remove('img_130');
     }
 
-    if (barraFont.value > 110) {
-        txt_110.classList.add('txt_110');
-    } else {
-        txt_110.classList.remove('txt_110');
-    }
-
 }
 
 input_cor_1.addEventListener("input", cor_principal)
@@ -275,28 +225,6 @@ function resetConf() {
         img_130.classList.remove('img_130');
     }
 
-    if (barraFont.value > 110) {
-        txt_110.classList.add('txt_110');
-    } else {
-        txt_110.classList.remove('txt_110');
-    }
-
     geral()
-
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        modo = false;
-        // true = escuro;
-        for (var i = 0; i < elementosMudar.length; i++) {
-            elementosMudar[i].classList.remove('claro');
-        }
-
-    } else {
-        modo = true
-        // false = claro;
-        for (var i = 0; i < elementosMudar.length; i++) {
-            elementosMudar[i].classList.add('claro');
-        }
-    }
-
     mudarRoot()
 }
