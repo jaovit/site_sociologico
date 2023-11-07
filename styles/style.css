@@ -161,7 +161,7 @@ table {
 
 /* tablet */
 
-@media (max-width: 2000px) {
+@media (min-width: 1750px) {
 
   html {
     scroll-padding-top: 15vw;
