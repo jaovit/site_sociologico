@@ -1,6 +1,5 @@
 var modo = true;
 var root = document.documentElement;
-var elementosMudar = document.querySelectorAll('.tema');
 var titulo = document.querySelectorAll(".titulo")
 var subtitulo = document.querySelectorAll(".subtitulo")
 var texto = document.querySelectorAll(".texto")
@@ -38,10 +37,6 @@ function mudarRoot() {
             '--borda': 'solid .01vw rgb(172, 170, 170)',
             '--background-card': 'url(../img/racismo-no-brasil-scaled.jpg)',
             '--filtro': 'brightness(25%)'
-        }
-
-        for (var i = 0; i < elementosMudar.length; i++) {
-            elementosMudar[i].classList.remove('claro');
         }
 
         modo = true
@@ -133,6 +128,12 @@ function geral() {
         txt_120.classList.remove('txt_120');
     }
 
+    if (barraFont.value > 110) {
+        txt_110.classList.add('txt_110');
+    } else {
+        txt_110.classList.remove('txt_110');
+    }
+
     if (barraImg.value > 120) {
         img_130.classList.add('img_130');
     } else {
@@ -217,6 +218,12 @@ function resetConf() {
         txt_120.classList.add('txt_120');
     } else {
         txt_120.classList.remove('txt_120');
+    }
+
+    if (barraFont.value > 110) {
+        txt_110.classList.add('txt_110');
+    } else {
+        txt_110.classList.remove('txt_110');
     }
 
     if (barraImg.value > 120) {
