@@ -9,23 +9,15 @@
 
 :root {
   --fonte-principal: 'Montserrat', sans-serif;
-  --fonte-subtitulo: 'Cinzel', serif;
-  /* --fonte-subtitulo: 'Roboto', sans-serif; */
-  /* --borda-menu: solid .1vw #ebc4b0;
-  --menu-cor: #191919;
-  --font-size-js: 1;
-  --tamanho-img: 1;
-  --cor-text-menu: #c9c2c0;
-  --cor-menu-2: #e4b7a0; */
 
+
+  --fonte-subtitulo: 'Cinzel', serif;
   --borda-menu: solid .1vw #e4980d;
   --menu-cor: rgb(5, 5, 5);
   --font-size-js: 1;
   --tamanho-img: 1;
   --cor-text-menu: #c9c2c0;
   --cor-menu-2: #e4980d;
-
-    /* modo claro padrão */
   --cor-principal: rgb(0, 0, 0);
   --cor-principal-deg: rgba(0, 0, 0, 0.75);
   --cor-segundaria: rgb(3, 3, 3);
@@ -37,7 +29,14 @@
   --background-card: url(../img/racismo-no-brasil-scaled.jpg);
   --filtro: brightness(25%) opacity(.8);
 
-  /* --cor-principal: #292626;
+   /* --fonte-subtitulo: 'Roboto', sans-serif; 
+  --borda-menu: solid .1vw #ebc4b0;
+  --menu-cor: #191919;
+  --font-size-js: 1;
+  --tamanho-img: 1;
+  --cor-text-menu: #c9c2c0;
+  --cor-menu-2: #e4b7a0; 
+  --cor-principal: #292626;
   --cor-principal-deg: #302d2cc9;
   --cor-segundaria: #413d3c;
   --cor-titulo: #e4b7a0;
@@ -47,21 +46,6 @@
   --background-card: url(../img/racismo-no-brasil-scaled.jpg);
   --filtro: brightness(25%) opacity(.8); */
 }
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    --cor-principal-deg: none;
-
-    --cor-principal: #c7c7c7;
-    --cor-segundaria: #b6b6b6;
-    --cor-titulo: #202020;
-    --sub-titulo: #242424;
-    --cor-texto: #2e2e2e;
-    --borda: solid .01vw rgb(70, 70, 70);
-    --background-card: url(../img/fundo_elem.jpg);
-    --filtro: brightness(75%) opacity(.5);
-  }
-} */
 
 html {
   scroll-behavior: smooth;
