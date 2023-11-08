@@ -33,9 +33,7 @@
     transition: .25s;
 }
 
-.header_itens .texto:hover,
-.header_itens.scrollou.claro .texto:hover,
-.header_itens.claro .texto:hover {
+.header_itens .texto:hover {
     color: var(--cor-menu-2);
     cursor: pointer;
 }
@@ -46,19 +44,6 @@
     font-weight: 500;
     color: rgb(22, 22, 22);
 }
-
-.header_itens .texto.claro.txtColor,
-.logo .texto.claro.texto.txtColor {
-    color: var(--cor-texto);
-}
-
-
-.header_itens.scrollou.claro .texto,
-.logo.scrollou .texto.claro {
-    font-weight: 300;
-    color: var(--cor-text-menu);
-}
-
 
 /* logo */
 
@@ -75,10 +60,6 @@
 
 .logo .texto.txt_125 {
     font-size: 1.125vw;
-}
-
-.logo.scrollou .texto.claro {
-    font-weight: 500;
 }
 
 .logo_escola {

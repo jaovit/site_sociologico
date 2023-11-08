@@ -9,16 +9,35 @@
 
 :root {
   --fonte-principal: 'Montserrat', sans-serif;
-  --fonte-subtitulo: 'Roboto', sans-serif;
-  --borda-menu: solid .1vw #ebc4b0;
+  --fonte-subtitulo: 'Cinzel', serif;
+  /* --fonte-subtitulo: 'Roboto', sans-serif; */
+  /* --borda-menu: solid .1vw #ebc4b0;
   --menu-cor: #191919;
   --font-size-js: 1;
   --tamanho-img: 1;
   --cor-text-menu: #c9c2c0;
-  --cor-menu-2: #e4b7a0;
+  --cor-menu-2: #e4b7a0; */
+
+  --borda-menu: solid .1vw #e4980d;
+  --menu-cor: rgb(5, 5, 5);
+  --font-size-js: 1;
+  --tamanho-img: 1;
+  --cor-text-menu: #c9c2c0;
+  --cor-menu-2: #e4980d;
 
     /* modo claro padrão */
-  --cor-principal: #292626;
+  --cor-principal: rgb(0, 0, 0);
+  --cor-principal-deg: rgba(0, 0, 0, 0.75);
+  --cor-segundaria: rgb(3, 3, 3);
+  --cor-titulo: #e4980d;
+  --titulo-deg: #ff5e00;
+  --sub-titulo: #e4980d;
+  --cor-texto: #c9c2c0;
+  --borda: solid .01vw rgb(172, 170, 170);
+  --background-card: url(../img/racismo-no-brasil-scaled.jpg);
+  --filtro: brightness(25%) opacity(.8);
+
+  /* --cor-principal: #292626;
   --cor-principal-deg: #302d2cc9;
   --cor-segundaria: #413d3c;
   --cor-titulo: #e4b7a0;
@@ -26,7 +45,7 @@
   --cor-texto: #c9c2c0;
   --borda: solid .01vw rgb(172, 170, 170);
   --background-card: url(../img/racismo-no-brasil-scaled.jpg);
-  --filtro: brightness(25%) opacity(.8);
+  --filtro: brightness(25%) opacity(.8); */
 }
 
 /* @media (prefers-color-scheme: light) {
@@ -122,6 +141,30 @@ table {
 
 .titulo {
   color: var(--cor-titulo);
+  font-family: 'Cinzel', serif;;
+  font-weight: 400;
+  font-size: calc(var(--font-size-js) * 1.8vw);
+  margin-bottom: .9vw;
+}
+
+.subtitulo {
+  font-size: calc(var(--font-size-js) * 1.3vw);
+  font-weight: 400;
+  margin-bottom: .5vw;
+  color: var(--sub-titulo);
+  font-family: var(--fonte-subtitulo);
+}
+
+.texto {
+  color: var(--cor-texto);
+  font-family: var(--fonte-principal);
+  font-size: calc(var(--font-size-js) * 1.075vw);
+  line-height: calc(var(--font-size-js) * 1.75vw);
+  font-weight: 400;
+}
+
+/* .titulo {
+  color: var(--cor-titulo);
   font-family: var(--fonte-principal);
   font-weight: 600;
   font-size: calc(var(--font-size-js) * 2vw);
@@ -142,11 +185,7 @@ table {
   font-size: calc(var(--font-size-js) * 1.075vw);
   line-height: calc(var(--font-size-js) * 1.75vw);
   font-weight: 400;
-}
-
-.texto.claro {
-  font-weight: 600;
-}
+} */
 
 /* aparecer com a rolagem */
 
@@ -207,16 +246,6 @@ table {
     line-height: calc(var(--font-size-js) * 3vw);
     font-weight: 400;
   }
-
-  .titulo.claro,
-  .subtitulo.claro {
-    font-weight: 600;
-  }
-
-  .texto.claro {
-    font-weight: 500;
-  }
-
 }
 
 /* celular  */
