@@ -18,11 +18,11 @@
   --tamanho-img: 1;
   --cor-text-menu: #c9c2c0;
   --cor-menu-2: #e4980d;
-  --cor-principal: rgb(0, 0, 0);
-  --cor-principal-deg: rgba(0, 0, 0, 0.75);
-  --cor-segundaria: rgb(15, 15, 15);
+  --cor-principal: rgb(15, 15, 15);
+  --cor-principal-deg: rgba(15, 15, 15, 0.75);
+  --cor-segundaria: rgb(0,0, 0);
   --cor-titulo: #e4980d;
-  --titulo-deg: #ff5e00;
+  --titulo-deg: #ff9900;
   --sub-titulo: #e4980d;
   --cor-texto: #c9c2c0;
   --borda: solid .01vw rgb(172, 170, 170);
