@@ -18,9 +18,9 @@
   --tamanho-img: 1;
   --cor-text-menu: #c9c2c0;
   --cor-menu-2: #e4980d;
-  --cor-principal: rgb(10, 10, 10);
-  --cor-principal-deg: rgba(10, 10, 10, 0.75);
-  --cor-segundaria: rgb(0,0, 0);
+  --cor-principal: rgb(0, 0, 0);
+  --cor-principal-deg: rgba(0, 0, 0, 0.75);
+  --cor-segundaria: rgb(12, 12, 12);
   --cor-titulo: #e4980d;
   --titulo-deg: #ff9900;
   --sub-titulo: #e4980d;
