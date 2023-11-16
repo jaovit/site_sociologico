@@ -184,7 +184,7 @@ table {
 
 /* tablet */
 
-@media (min-width: 1750px) {
+/* @media (min-width: 1750px) {
 
   html {
     scroll-padding-top: 15vw;
@@ -232,7 +232,7 @@ table {
   }
 }
 
-/* celular  */
+ celular  */
 
 @media (max-width: 500px) {
 
