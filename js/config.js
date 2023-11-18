@@ -29,8 +29,8 @@ function mudarRoot() {
             '--cor-text-menu': '#c9c2c0',
             '--cor-menu-2': '#e4980d',
 
-            '--cor-principal': 'rgb(17, 17, 17)',
-            '--cor-segundaria': 'rgb(0, 0, 0)',
+            '--cor-principal': ' rgb(0, 0, 0)',
+            '--cor-segundaria': 'rgb(17, 17, 17))',
             '--cor-titulo': '#e4980d',
             '--sub-titulo': '#e4980d',
             '--cor-texto': '#c9c2c0',
